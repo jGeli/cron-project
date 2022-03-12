@@ -28,21 +28,8 @@ db.sequelize.sync(
   })
 
 
-
-function init(){
-    Test.bulkCreate([
-        {id: 1, title: 'sample1'},
-        {id: 2, title: 'sample2'},
-        {id: 3, title: 'sample3'}
-    ])
-    .catch(err => {
-        console.log(err)
-    })
-}
-
-
 // simple route
-require('./routes/test.route')(app);
+require('./routes/auditLog.route')(app);
 
 
 app.listen(process.env.PORT || 3000, ()=>{

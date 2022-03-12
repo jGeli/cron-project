@@ -23,7 +23,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Barangay Models
-db.test = require("./test.model.js")(sequelize, Sequelize);
+db.auditLog = require("./auditLog.model")(sequelize, Sequelize);
 // db.test1 = require("./test1.model.js")(sequelize, Sequelize);
 
 

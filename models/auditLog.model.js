@@ -1,13 +1,9 @@
 module.exports = (sequelize, Sequelize) => {
     const Test = sequelize.define("test", {
-      title: {
+      user_id: {
         type: Sequelize.STRING
       },
-      timestamp: {
-        type: Sequelize.STRING,
-        defaultValue: new Date()
-      },
-      unixTime: {
+      date_time: {
         type: Sequelize.STRING,
         defaultValue: Date.now()
       },
